@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Component</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <!-- ! Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ! CSS Files -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="container-fluid vh-100">
+
+        <div id="firstCard" class="card p-4 rounded-5">
+            <div class="card-img">
+                <img class="rounded-circle icon" src="./images/icon-star.svg" alt="">
+            </div>
+            <div class="card-body px-0 m-0 d-flex flex-column justify-content-center">
+                <h4 class="m-0">How did we do ?</h4>
+                <p class="m-0">Please let us know how we did with your support request. All feedback is appreciated to
+                    help us
+                    improve our offering! </p>
+            </div>
+            <div class=" rateBtnsBox d-flex justify-content-evenly mb-3">
+                <div class="rateBtn">1</div>
+                <div class="rateBtn">2</div>
+                <div class="rateBtn">3</div>
+                <div class="rateBtn">4</div>
+                <div class="rateBtn">5</div>
+            </div>
+            <div class="my-3">
+                <button id="submitBtn" class="btn btn-danger w-100 rounded-5 disabled">SUBMIT</button>
+            </div>
+        </div>
+        <div id="secCard" class="card p-4 rounded-5 d-none">
+            <div class="card-img text-center my-3">
+                <img src="./images/illustration-thank-you.svg" alt="">
+            </div>
+            <div id="rate-title"
+                class="   text-center w-75 m-auto rounded-pill py-1 mt-4 d-flex align-items-center justify-content-center">
+                
+            </div>
+            <div class=" thx-box text-center mt-4">
+                <h4>Thank you!</h4>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to
+                    get in touch!</p>
+            </div>
+        </div>
+    </main>
+    <!-- ! JavaScript Files -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

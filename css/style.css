@@ -1,0 +1,77 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(215, 18%, 19%);
+    --Dark-Blue: hsl(215, 22%, 15%);
+    --body-bg: hsl(228, 11%, 9%);
+    --main-font: 'Overpass', sans-serif;
+    --Font-size-paragraph: 0.9375rem;
+}
+body{
+    background-color: var(--body-bg);
+    font-family: var(--main-font);
+}
+main{
+    position: relative;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 22rem;
+    min-height: 25rem;
+    background-color: var(--Dark-Blue);
+}
+.card-img .icon{
+    background-color: var(--Medium-Grey);
+    padding: 0.75rem;
+}
+.d-flex{
+    gap: 1rem;
+}
+.rateBtn{
+    background-color: var(--Medium-Grey) ;
+    color: var(--Light-Grey);
+    border-radius: 50%;
+    transition: all 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rateBtn:hover{
+    background-color: var(--Orange) !important;
+    color:var(--White);
+    cursor: pointer;
+}
+
+h4{
+    color: var(--White);
+}
+p{
+    font-size: var(--Font-size-paragraph);
+    color: var(--Light-Grey);
+    word-spacing: 1px;
+    letter-spacing: -1px;
+}
+button{
+    background-color: var(--Orange) !important;
+    border: none !important;
+}
+button:hover{
+    background-color:var(--White) !important;
+    color: var(--Orange) !important;
+}
+
+#rate-title{
+    background-color: var(--Medium-Grey) ;
+}
+#rate-title span{
+    color: #ca7c4b;
+}
+.thx-box p{
+    word-spacing: 2px;
+}
